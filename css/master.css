@@ -1,0 +1,101 @@
+body{
+background-color: orange;
+
+}
+
+
+.yellow{
+  color: yellow;
+}
+
+.blue{
+color: blue;
+
+}
+
+.brown{
+  color: brown;
+
+}
+
+.white{
+
+  color: white;
+}
+
+.purple {
+  color: purple;
+}
+
+.black {
+  color: black;
+}
+
+
+
+.grey{
+
+  color: grey;
+}
+
+.pink {
+  color: pink;
+}
+
+.green {
+  color: green;
+}
+
+.typeLine {
+border-radius: 25px;
+text-align: center;
+font-style: italic;
+font-size: 40px;
+font-weight: bold;
+}
+
+h1{
+
+  text-align: center;
+}
+
+#header2{
+  text-align: center;
+}
+#inStruct{
+
+}
+.h2h2andh4 {
+border: black 3px;
+
+}
+
+.gameButtons {
+
+margin-left: 5%;
+margin-bottom: 3%;
+
+}
+
+.startBtn {
+  margin-left: 15%;
+}
+
+
+.inGame {
+
+
+  border:dashed;
+  height: 40%;
+  width: 35%;
+}
+
+
+.timeSlot{
+  text-align: right;
+  /* margin-top: 4px;
+  margin-right: 4px; */
+  padding-right: 4px;
+  padding-top: 2px;
+
+}
