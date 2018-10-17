@@ -1,7 +1,3 @@
-body{
-background-color: orange;
-
-}
 
 
 .yellow{
@@ -12,6 +8,12 @@ background-color: orange;
 color: blue;
 
 }
+
+body{
+background-color: yellow;
+
+}
+
 
 .brown{
   color: brown;
@@ -46,35 +48,43 @@ color: blue;
   color: green;
 }
 
-.typeLine {
-border-radius: 25px;
+#typeLine {
+/* border-radius: 25px; */
 text-align: center;
 font-style: italic;
 font-size: 40px;
 font-weight: bold;
+/* border: solid black 2px; */
+width: 50%;
+margin: auto;
+}
+
+h4{
+
+  background-color: orange;
 }
 
 h1{
-
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
   text-align: center;
 }
 
 #header2{
   text-align: center;
 }
-#inStruct{
 
-}
 .h2h2andh4 {
 border: black 3px;
 
 }
 
 .gameButtons {
-
-margin-left: 5%;
-margin-bottom: 3%;
-
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 33%;
+/* align-items: center; */
 }
 
 .startBtn {
@@ -83,11 +93,13 @@ margin-bottom: 3%;
 
 
 .inGame {
-
-
+  margin: auto;
+  /* display: flex; */
   border:dashed;
-  height: 40%;
-  width: 35%;
+  height: 400px;
+  width: 50%;
+  /* flex-direction: column; */
+
 }
 
 
@@ -97,5 +109,33 @@ margin-bottom: 3%;
   margin-right: 4px; */
   padding-right: 4px;
   padding-top: 2px;
+  font-size: 30%;
 
+}
+
+#answerArea{
+margin-left: 33%;
+/* padding-bottom: 1px; */
+background-color: pink;
+text-align: center;
+width: 33%;
+margin-bottom:0px;
+
+  /* align-items: center; */
+
+}
+#counter{
+border-radius: 100px;
+background-color: white;
+/* padding: 2px; */
+width: 5%;
+text-align: center;
+float: right;
+margin-top: 0px;
+/* font-size: 20px */
+}
+
+#scorePlace{
+  font-size: 50px;
+  text-align: center;
 }

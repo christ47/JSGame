@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(wordGen) { // var myString = " "
-
+  document.getElementById("answerArea").disabled = true;
   var word = {
     wordData: [{
         name: "yellow",
@@ -76,28 +76,28 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
   // CREATE
   gameStart.addEventListener('click', function(event) {
     wordGen();
-    var count = 10,
-      timer = setInterval(function() {
+    var count = 9;
+    document.getElementById("answerArea").disabled = false;
+    var timer = setInterval(function() {
         $("#counter").html(count--);
-        playerScore = 0;
+
         document.getElementById('scorePlace').innerHTML = playerScore;
         // $("#show").click(function(){
         // $("#answerArea").show();
         if (count == -1) {
           clearInterval(timer);
           document.getElementById('typeLine').innerHTML = "Game over. Please press the Start Button to retry";
+          playerScore = 0;
+          document.getElementById("answerArea").disabled = true;
 
           $("#answerArea").keypress(function keyClick(event) {
-              if (event.keyCode === 13.) {
-                // $(this).hide();
-                // console.log(count);
-                document.getElementById('pointStatus').innerHTML = "Game over";
-                  }
-                // alert("please restart");
-              });
-            // $("#answerArea").keypress(function keyClick(event) {
-            //   if (event.keyCode === 13.) {
-            // }})
+            if (event.keyCode === 13.) {
+              // $(this).hide();
+              // console.log(count);
+              document.getElementById('pointStatus').innerHTML = "Game over";
+            }
+            // alert("please restart");
+          });
 
         }
       }, 1000);
@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
   // points = 0;
 
   // random word generator
-
 
 
   // random colour generation
@@ -141,12 +140,13 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
       if (playersAnswer == correctAnswer) {
         // function pointGained (){
         // playerScore++;
+        playerScore = playerScore + 1;
         document.getElementById('answerArea').value = ""
         randomColorBg();
         setBackground();
         $("#typeLine").removeClass();
         wordGen();
-        playerScore = playerScore + 1;
+
 
         document.getElementById('scorePlace').innerHTML = playerScore;
         // $('typeLine').removeClass(wordValue);
@@ -163,15 +163,70 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
       }
     }
   })
-})
+
+  $('#hardMode').click(function() {
+    loop();
+
+
+    function loop() {
+
+      $('#typeLine').animate({
+        // opacity: 0.25,
+        // top: '+=1400',
+        height: 'toggle',
+      }, 3000, 'linear', function() {
+        loop();
+      });
+    }
+  });
+
+  $("#easyMode").click(function() {
+    $("#typeLine").stop();
+    $('#typeLine').css('height:','4000px');
+    // $('.myElementClass').css('text-align','center');
+  });
+});
+// })
 //
 //   }
 // })
+// ANIMATIONS
+// $(document).ready(function(){
+
+// }
 
 
-
-
-
+// function hardloop() {
+//     $('#typeLine').css({right:0});
+//     $('#typeLine').animate ({
+//         right: '+=1400',
+//     }, 3000, 'linear', function() {
+//         hardloop();
+//     });
+// }
+// hardloop();
+//   });
+//       $(document).ready(function() {
+//
+// })
+// $(document).ready(function() {
+//     function loop() {
+//         $('#clouds').css({right:0});
+//         $('#clouds').animate ({
+//             right: '+=1400',
+//         }, 5000, 'linear', function() {
+//             loop();
+//         });
+//     }
+//     loop();
+// });
+//
+// $(document).ready(function(){
+// reslide();
+// });
+// function reslide(){
+// $(‘.slide-right’).css({width:’0′}).animate({width:’100%’}, 400, reslide);
+// }
 
 
 //       // color of text
@@ -217,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
 
 //     }
 //
-// });
+
 //
 //
 //
@@ -364,3 +419,5 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
 // var rand = Math.ceil(Math.random()*3);
 // console.log(data.lessons[rand].topic);
 // console.log(data.lessons[1].description);
+
+// location.reload();
