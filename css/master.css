@@ -1,7 +1,23 @@
-
+/* * {
+  border: 0.5px solid black;
+} */
+body{
+background-color: #554640;
+color: #E5F2C9;
+}
 
 .yellow{
   color: yellow;
+}
+
+.topDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+.answerStat{
+  height: 400px;
+  width: 24%;
 }
 
 .blue{
@@ -9,11 +25,9 @@ color: blue;
 
 }
 
-body{
-background-color: yellow;
-
+.red{
+  color: red;
 }
-
 
 .brown{
   color: brown;
@@ -47,7 +61,12 @@ background-color: yellow;
 .green {
   color: green;
 }
+#startBtn{
+width: 15%;
+font-size: 25px;
+    box-shadow: 5px 5px;
 
+}
 #typeLine {
 /* border-radius: 25px; */
 text-align: center;
@@ -60,13 +79,17 @@ margin: auto;
 }
 
 h4{
-
-  background-color: orange;
+  color: #2B2D42;
+  background-color: white;
+   /* rgba(213,87,59, 0.6); */
+  /* background-color: #BDFFFD; */
+  /* opacity: 0.2; */
+  text-align: center;
 }
 
 h1{
-  border-top: solid black 3px;
-  border-bottom: solid black 3px;
+  /* border-top: solid rgba(213,87,59, 0.6) 3px;
+  border-bottom: solid rgba(213,87,59, 0.6) 3px; */
   text-align: center;
 }
 
@@ -95,7 +118,7 @@ width: 33%;
 .inGame {
   margin: auto;
   /* display: flex; */
-  border:dashed;
+  border:solid;
   height: 400px;
   width: 50%;
   /* flex-direction: column; */
@@ -119,11 +142,17 @@ margin-left: 33%;
 background-color: pink;
 text-align: center;
 width: 33%;
-margin-bottom:0px;
 
   /* align-items: center; */
 
 }
+#pointStatus{
+  /* border: solid black 2px; */
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
 #counter{
 border-radius: 100px;
 background-color: white;
@@ -132,10 +161,31 @@ width: 5%;
 text-align: center;
 float: right;
 margin-top: 0px;
+color: black;
+font-size: 25px;
 /* font-size: 20px */
 }
 
 #scorePlace{
   font-size: 50px;
   text-align: center;
+  border-top: white solid 2px;
+  border-bottom: white solid 2px;
+
+}
+
+.scoreAcom{
+  font-size: 30px;
+    text-align: center;
+}
+#easyMode{
+background-color: #7CFFC4;
+
+}
+#hardMode{
+background-color: #6ABEA7;
+}
+#wackyMode{
+background-color: #94B0DA;
+
 }

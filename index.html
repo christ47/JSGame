@@ -13,19 +13,21 @@
     <div class="h2andh4">
     <h2 id="header2"> Test your brain. Type the colour of the words that come up. Be quick!!</h2>
 
-    <h4 id="inStruct">Instructions: A word will come accross the page. You must write out the colour of the text in order to score a point. Be careful! There will be some distractions to put you off. Test your concentration and brain power!</h4>
+    <h4 id="inStruct">Instructions: Write out the colour of the word. Be careful! There will be some distractions to put you off. Test your brain power!</h4>
 
   </div>
+  <div class="topDiv">
+    <img class="answerStat" id="correctTick" src="C:\Users\Tech-W109\sparta_materials\JSGame\images\greencheck.png" alt="correct tick">
     <div class="inGame">
 
 
-      <button type="button" onclick="" id="startBtn" >Begin</button>
+      <button type="button"  id="startBtn" >Begin</button>
 
-      <p id="counter">90</p>
+      <p id="counter">60</p>
+      <p class="scoreAcom"> Your Score</p>
+      <p id="scorePlace">0</p>
 
-      <p id="scorePlace">0 </p>
-
-      <p id="typeLine"> get ready to type </p>
+      <p id="typeLine"> Get ready to type! </p>
 
       <p id="pointStatus"> </p>
       <input id="answerArea" type="text"> </input>
@@ -33,18 +35,24 @@
 
 
     </div>
+    <img alt="wrong cross" class="answerStat" id="wrongCross" src="C:\Users\Tech-W109\sparta_materials\JSGame\images\red-cross">
+
+  </div>
       <div class="gameButtons">
 
             <!-- above game -->
 
-
-            <button id="easyMode" type="button" onclick="">Easy</button>
+            <br>
+            <button id="easyMode" type="button" >Easy</button>
+            <br>
             <!-- original game version -->
-              <button id="hardMode" type="button" onclick="">Hard</button>
+              <button id="hardMode" type="button" >Hard</button>
+              <br>
               <!-- high speed animations and small setInterval -->
-                <button id="wackyMode" type="button" onclick="">Wacky Mode</button>
+                <button id="wackyMode" type="button" >Wacky Mode</button>
                 <!-- writing spins and moves in regular patterns -->
-
+                <p>High Score <br> </p>
+                <p id="topScore"></p>
       </div>
 
 
