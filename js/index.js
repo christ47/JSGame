@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function(wordGen) { // var myString = " "
+document.addEventListener('DOMContentLoaded', function(wordGen) {
+  $(".answerStat").hide();
 
-  // name what u wanna store
   document.getElementById("answerArea").disabled = true;
   var word = {
     wordData: [{
@@ -62,19 +62,19 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
       },
       //
       {
-        name:"Paprika is ORANGE",
-       value:"white"
-     },
-     {
-       name: "apples are...",
-       value:"red"
+        name: "Paprika is ORANGE",
+        value: "white"
+      },
+      {
+        name: "apples are...",
+        value: "red"
 
-     },
-     {
-       name: "chalk is...",
-       value: "green"
+      },
+      {
+        name: "chalk is...",
+        value: "green"
 
-     }
+      }
 
     ]
   };
@@ -85,7 +85,8 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
   var topscoringplayer = JSON.parse(localStorage.getItem("Name"));
   var highestScore = JSON.parse(localStorage.getItem("Scores"));
   console.log(highestScore);
-    document.getElementById('topScore').innerHTML = "Name:  "+ topscoringplayer + "   Score:  "+ highestScore;
+  document.getElementById('topScore').innerHTML = "Name:  " + topscoringplayer;
+    document.getElementById('topScore2').innerHTML ="Score:  " + highestScore;
 
   function wordGen() {
     var randomNum = Math.floor(Math.random() * 9);
@@ -108,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
   // CREATE
   gameStart.addEventListener('click', function(event) {
     wordGen();
-    playerScore = 0;
-    var count = 9;
+    playerScore = 44;
+    var count = 20;
     document.getElementById('scorePlace').innerHTML = playerScore;
     document.getElementById("answerArea").disabled = false;
     document.getElementById('answerArea').value = "";
@@ -121,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
       // $("#show").click(function(){
       // $("#answerArea").show();
       if (count == -1) {
+        $(".answerStat").hide();
         document.getElementById("startBtn").disabled = false;
         // playerScore = 0;
         clearInterval(timer);
@@ -129,12 +131,12 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
         document.getElementById("answerArea").disabled = true;
         console.log(playerScore);
         $("#typeLine").removeClass();
-        if (playerScore>highestScore) {
+        if (playerScore > highestScore) {
           highestScoreName = prompt('WOAH! You got the highest score! Whats your name?')
           localStorage.setItem("Name", JSON.stringify(highestScoreName));
           localStorage.setItem("Scores", JSON.stringify(playerScore));
 
-        //       $("#typeLine").removeClass();
+          //       $("#typeLine").removeClass();
         }
         // $("#answerArea").keypress(function keyClick(event) {
         //   if (event.keyCode === 13.) {
@@ -177,12 +179,16 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
   // $('#answerArea').keypress(keyClick);
   $("#answerArea").keypress(function keyClick(event) {
     if (event.keyCode === 13.) {
+
       // $("#typeLine").click();
       // alert("button clicks");
       var playersAnswer = document.getElementById('answerArea').value;
 
       console.log(playersAnswer);
       if (playersAnswer == correctAnswer) {
+
+        $("#correctTick").show();
+        $("#wrongCross").hide();
         // function pointGained (){
         // playerScore++;
         playerScore = playerScore + 1;
@@ -202,6 +208,8 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
 
         // console.log(document.getElementByI d('answerArea').innerHTML);
       } else {
+        $("#wrongCross").show();
+        $("#correctTick").hide();
         document.getElementById('pointStatus').innerHTML = "Not quite! Try again"
         document.getElementById('answerArea').value = ""
         console.log(document.getElementById('answerArea').innerHTML);
@@ -228,6 +236,18 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
   $("#easyMode").click(function() {
     location.reload();
   });
+
+  $("#restartBtn").click(function() {
+  location.reload();
+  });
+
+// $("#hardMode").hover(function () {
+//   $('#wackySounds').html();
+//        //dice roll sound
+//        var audio = $("#wackySounds")[0];
+//        // audio.play();
+//
+// })
 
 
   $("#wackyMode").click(function() {
@@ -293,3 +313,9 @@ document.addEventListener('DOMContentLoaded', function(wordGen) { // var myStrin
 //
 // location.reload();
 // $("#img").stopRotate();
+
+// $("<audio></audio>").attr({
+//     'src':'audio/something.mp3',
+//     'volume':0.4,
+//     'autoplay':'autoplay'
+// }).appendTo("body");

@@ -1,6 +1,53 @@
 /* * {
   border: 0.5px solid black;
 } */
+
+#trophyPic{
+height:104px;
+margin-left: 0px;
+  /* padding: 5px; */
+}
+.moveLeft{
+/* border: solid black 2px; */
+width: 500px;
+margin-left: 500px;
+text-align: center;
+  font-family: serif;
+    font-weight: bold;
+      /* text-decoration: underline; */
+      height: 225px;
+/* text-align: left; */
+}
+#noUnder{
+  font-size: 18px;
+  text-decoration: underline;
+}
+ /* #noUnder{
+
+  text-decoration: none;
+
+} */
+
+/* #topScore{ */
+  /* border: solid red 2px; */
+  /* text-decoration: none; */
+
+
+
+/* .leaderBoard { */
+
+
+  /* text-align: right; */
+
+  /* font-size: 20px; */
+/* width: 200px; */
+/* } */
+/* margin-left: 80%; */
+
+/* .moveLeft p{
+  text-align: left;
+} */
+/* *{border: solid red 2px;} */
 body{
 background-color: #554640;
 color: #E5F2C9;
@@ -18,6 +65,7 @@ color: #E5F2C9;
 .answerStat{
   height: 400px;
   width: 24%;
+  position: absolute;
 }
 
 .blue{
@@ -65,8 +113,24 @@ color: blue;
 width: 15%;
 font-size: 25px;
     box-shadow: 5px 5px;
+    border-radius: 25px;
+    background-color: #eb94d0;
+    color: black;
+}
+#restartBtn{
+  width: 15%;
+  font-size: 25px;
+      box-shadow: 5px 5px;
+      border-radius: 25px;
+      background-color: #eb94d0;
+      color: black;
+      margin-left: 27%;
+
+
 
 }
+
+
 #typeLine {
 /* border-radius: 25px; */
 text-align: center;
@@ -80,17 +144,20 @@ margin: auto;
 
 h4{
   color: #2B2D42;
-  background-color: white;
+  background-color: #D4E09B;
    /* rgba(213,87,59, 0.6); */
   /* background-color: #BDFFFD; */
   /* opacity: 0.2; */
   text-align: center;
 }
 
+
+
 h1{
   /* border-top: solid rgba(213,87,59, 0.6) 3px;
   border-bottom: solid rgba(213,87,59, 0.6) 3px; */
   text-align: center;
+  /* font-size: 40px; */
 }
 
 #header2{
@@ -101,21 +168,52 @@ h1{
 border: black 3px;
 
 }
+.gameButtons1{
+  font-weight: bolder;
+  font-family: Lucida, monospace;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 25px;
 
+
+}
 .gameButtons {
 margin: auto;
 display: flex;
 flex-direction: column;
 width: 33%;
+
+height: 350px;
 /* align-items: center; */
+
 }
 
-.startBtn {
-  margin-left: 15%;
+/* .topDiv{
+position: fixed;
+
+} */
+
+#easyMode{
+background-color: #7CFFC4;
+border: solid green 2px;
+}
+#hardMode{
+background-color: #6ABEA7;
+border: solid red 2px;
+}
+#wackyMode{
+background-color: #94B0DA;
+border-top: solid yellow 2px;
+border-right: solid orange 2px;
+border-bottom: solid brown 2px;
+border-left: solid orange 2px;
+/* background-image: url(C:\Users\Tech-W109\sparta_materials\JSGame\images\wacky.jpg); */
+/* background-image: image(C:\Users\Tech-W109\sparta_materials\JSGame\images\wacky.jpg); */
 }
 
 
 .inGame {
+  /* position: fixed; */
   margin: auto;
   /* display: flex; */
   border:solid;
@@ -142,9 +240,7 @@ margin-left: 33%;
 background-color: pink;
 text-align: center;
 width: 33%;
-
   /* align-items: center; */
-
 }
 #pointStatus{
   /* border: solid black 2px; */
@@ -173,19 +269,22 @@ font-size: 25px;
   border-bottom: white solid 2px;
 
 }
-
+img{
+  margin-top: 0px;
+}
 .scoreAcom{
   font-size: 30px;
     text-align: center;
 }
-#easyMode{
-background-color: #7CFFC4;
 
-}
+
+
 #hardMode{
-background-color: #6ABEA7;
-}
-#wackyMode{
-background-color: #94B0DA;
+border: red 2px;
 
 }
+
+#wackyMode{
+
+
+} */
