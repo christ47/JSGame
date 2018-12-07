@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reactions Test</title>
+  <link rel="StyleSheet" href="css/master.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+
+</head>
+
+<body>
+  <h1 id="header1"> Welcome to the reaction game</h1>
+  <div class="h2andh4">
+    <h2 id="header2"> Test your brain. Type the colour of the words that come up. Be quick!!</h2>
+
+    <h4 id="inStruct">Instructions: Write out the colour of the word. Be careful! There will be some distractions to put you off. Test your brain power!</h4>
+
+  </div>
+  <!-- <div class="leaderBoard"> -->
+
+  <div class="moveLeft">
+    <img id="trophyPic" src="./images/trophy.jpg">
+    <p class="leaderBoard" id="noUnder">High Score <br> </p>
+    <p class="leaderBoard" id="topScore"></p>
+    <p class="leaderBoard" id="topScore2" </p> </div> <div class="topDiv">
+
+      <img class="answerStat" id="correctTick" src="./images/greencheck.png" alt="correct tick">
+      <img alt="wrong cross" class="answerStat" id="wrongCross" src="./images/red-cross">
+
+      <div class="inGame">
+
+
+        <button type="button" id="startBtn">Begin</button>
+
+        <button id="restartBtn" type="button">Restart</button>
+
+
+
+        <p id="counter">60</p>
+        <p class="scoreAcom"> Your Score</p>
+        <p id="scorePlace">0</p>
+
+        <p id="typeLine"> Get ready to type! </p>
+
+        <p id="pointStatus"> </p>
+        <input id="answerArea" type="text"> </input>
+
+
+
+      </div>
+
+  </div>
+
+
+  <div class="gameButtons">
+
+    <!-- above game -->
+
+    <br>
+    <button class="gameButtons1" id="easyMode" type="button">Easy</button>
+    <br>
+    <!-- original game version -->
+    <button class="gameButtons1" id="hardMode" type="button">Hard</button>
+    <br>
+    <!-- high speed animations and small setInterval -->
+    <button class="gameButtons1" id="wackyMode" type="button">Wacky Mode</button>
+    <!-- writing spins and moves in regular patterns -->
+
+
+  </div>
+
+  <audio preload="auto" id="wackySounds" src="C:\Users\Tech-W109\sparta_materials\JSGame\audio\wackysfx.mp3"></audio>
+</body>
+<script src="js/index.js" type="text/javascript">
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+</html>

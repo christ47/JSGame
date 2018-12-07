@@ -1,0 +1,290 @@
+/* * {
+  border: 0.5px solid black;
+} */
+
+#trophyPic{
+height:104px;
+margin-left: 0px;
+  /* padding: 5px; */
+}
+.moveLeft{
+/* border: solid black 2px; */
+width: 500px;
+margin-left: 500px;
+text-align: center;
+  font-family: serif;
+    font-weight: bold;
+      /* text-decoration: underline; */
+      height: 225px;
+/* text-align: left; */
+}
+#noUnder{
+  font-size: 18px;
+  text-decoration: underline;
+}
+ /* #noUnder{
+
+  text-decoration: none;
+
+} */
+
+/* #topScore{ */
+  /* border: solid red 2px; */
+  /* text-decoration: none; */
+
+
+
+/* .leaderBoard { */
+
+
+  /* text-align: right; */
+
+  /* font-size: 20px; */
+/* width: 200px; */
+/* } */
+/* margin-left: 80%; */
+
+/* .moveLeft p{
+  text-align: left;
+} */
+/* *{border: solid red 2px;} */
+body{
+background-color: #554640;
+color: #E5F2C9;
+}
+
+.yellow{
+  color: yellow;
+}
+
+.topDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+.answerStat{
+  height: 400px;
+  width: 24%;
+  position: absolute;
+}
+
+.blue{
+color: blue;
+
+}
+
+.red{
+  color: red;
+}
+
+.brown{
+  color: brown;
+
+}
+
+.white{
+
+  color: white;
+}
+
+.purple {
+  color: purple;
+}
+
+.black {
+  color: black;
+}
+
+
+
+.grey{
+
+  color: grey;
+}
+
+.pink {
+  color: pink;
+}
+
+.green {
+  color: green;
+}
+#startBtn{
+width: 15%;
+font-size: 25px;
+    box-shadow: 5px 5px;
+    border-radius: 25px;
+    background-color: #eb94d0;
+    color: black;
+}
+#restartBtn{
+  width: 15%;
+  font-size: 25px;
+      box-shadow: 5px 5px;
+      border-radius: 25px;
+      background-color: #eb94d0;
+      color: black;
+      margin-left: 27%;
+
+
+
+}
+
+
+#typeLine {
+/* border-radius: 25px; */
+text-align: center;
+font-style: italic;
+font-size: 40px;
+font-weight: bold;
+/* border: solid black 2px; */
+width: 50%;
+margin: auto;
+}
+
+h4{
+  color: #2B2D42;
+  background-color: #D4E09B;
+   /* rgba(213,87,59, 0.6); */
+  /* background-color: #BDFFFD; */
+  /* opacity: 0.2; */
+  text-align: center;
+}
+
+
+
+h1{
+  /* border-top: solid rgba(213,87,59, 0.6) 3px;
+  border-bottom: solid rgba(213,87,59, 0.6) 3px; */
+  text-align: center;
+  /* font-size: 40px; */
+}
+
+#header2{
+  text-align: center;
+}
+
+.h2h2andh4 {
+border: black 3px;
+
+}
+.gameButtons1{
+  font-weight: bolder;
+  font-family: Lucida, monospace;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 25px;
+
+
+}
+.gameButtons {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 33%;
+
+height: 350px;
+/* align-items: center; */
+
+}
+
+/* .topDiv{
+position: fixed;
+
+} */
+
+#easyMode{
+background-color: #7CFFC4;
+border: solid green 2px;
+}
+#hardMode{
+background-color: #6ABEA7;
+border: solid red 2px;
+}
+#wackyMode{
+background-color: #94B0DA;
+border-top: solid yellow 2px;
+border-right: solid orange 2px;
+border-bottom: solid brown 2px;
+border-left: solid orange 2px;
+/* background-image: url(C:\Users\Tech-W109\sparta_materials\JSGame\images\wacky.jpg); */
+/* background-image: image(C:\Users\Tech-W109\sparta_materials\JSGame\images\wacky.jpg); */
+}
+
+
+.inGame {
+  /* position: fixed; */
+  margin: auto;
+  /* display: flex; */
+  border:solid;
+  height: 400px;
+  width: 50%;
+  /* flex-direction: column; */
+
+}
+
+
+.timeSlot{
+  text-align: right;
+  /* margin-top: 4px;
+  margin-right: 4px; */
+  padding-right: 4px;
+  padding-top: 2px;
+  font-size: 30%;
+
+}
+
+#answerArea{
+margin-left: 33%;
+/* padding-bottom: 1px; */
+background-color: pink;
+text-align: center;
+width: 33%;
+  /* align-items: center; */
+}
+#pointStatus{
+  /* border: solid black 2px; */
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+#counter{
+border-radius: 100px;
+background-color: white;
+/* padding: 2px; */
+width: 5%;
+text-align: center;
+float: right;
+margin-top: 0px;
+color: black;
+font-size: 25px;
+/* font-size: 20px */
+}
+
+#scorePlace{
+  font-size: 50px;
+  text-align: center;
+  border-top: white solid 2px;
+  border-bottom: white solid 2px;
+
+}
+img{
+  margin-top: 0px;
+}
+.scoreAcom{
+  font-size: 30px;
+    text-align: center;
+}
+
+
+
+#hardMode{
+border: red 2px;
+
+}
+
+#wackyMode{
+
+
+} */
